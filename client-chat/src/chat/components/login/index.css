@@ -1,0 +1,18 @@
+.login-box {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 25%;
+  max-width: 360px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  font-size: 16px;
+}
+
+.button.login {
+  margin-top: 32px;
+}

@@ -1,0 +1,29 @@
+.tabs-nav {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.tabs-nav-item {
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.tabs-nav-item + .tabs-nav-item {
+  margin-left: 8px;
+}
+
+.tabs-nav-item:hover {
+  background: #e5e5e5;
+}
+
+.tabs-nav-item-active {
+  background: #f1f1f1;
+}

@@ -1,0 +1,28 @@
+.send-message {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 20px 20px;
+}
+
+.send-message-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(230, 230, 230, 0.4);
+  border-radius: 28px;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.button.send {
+  width: 72px;
+  padding: 6px;
+}

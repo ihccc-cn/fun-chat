@@ -1,0 +1,13 @@
+.slogan {
+  padding: 72px 0;
+  text-align: center;
+  color: #c9c9c9;
+}
+
+.slogan-title {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #2196f3, #96e399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

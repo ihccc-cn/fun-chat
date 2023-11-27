@@ -1,0 +1,29 @@
+.form-body {
+  width: 50%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field + .form-field {
+  margin-top: 48px;
+}
+
+.form-field .form-field-label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+.form-field .form-field-label::after {
+  content: "：";
+}
+
+.field-desc {
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: #adadad;
+}

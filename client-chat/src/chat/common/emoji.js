@@ -1,0 +1,41 @@
+export default [
+  {
+    key: "picture",
+    label: "图片表情",
+    list: [
+      { key: "0", name: "Ok", src: "/emoticon/1/104EE6C7.jpg" },
+      { key: "1", name: "nice", src: "/emoticon/1/104F539B.gif" },
+      { key: "2", name: "挑逗", src: "/emoticon/1/1047BBC2.gif" },
+      { key: "3", name: "嗨起来", src: "/emoticon/1/104811E1.gif" },
+      { key: "4", name: "我来啦", src: "/emoticon/1/1497BCE1.gif" },
+      { key: "5", name: "一起观望", src: "/emoticon/1/1498B79C.gif" },
+      { key: "6", name: "发呆", src: "/emoticon/1/1498B105.gif" },
+      { key: "7", name: "吃雪糕", src: "/emoticon/1/1497815F.jpg" },
+      { key: "8", name: "摇摆", src: "/emoticon/1/14960703.gif" },
+      { key: "9", name: "开心", src: "/emoticon/1/14989109.gif" },
+      { key: "10", name: "音乐", src: "/emoticon/1/1497B2BF.gif" },
+    ],
+  },
+  {
+    key: "1",
+    labelSrc: "/emoticon-pack/font_4336949_xh33lztf9r.png",
+    url: "/emoticon-pack/font_4336949_xh33lztf9r.js",
+    config: "/emoticon-pack/font_4336949_xh33lztf9r.json",
+  },
+  {
+    key: "2",
+    labelSrc: "/emoticon-pack/font_4336951_hdvjhncnsf5.png",
+    url: "/emoticon-pack/font_4336951_hdvjhncnsf5.js",
+    config: "/emoticon-pack/font_4336951_hdvjhncnsf5.json",
+    column: 6,
+    style: "font-size: 48px;",
+  },
+  {
+    key: "3",
+    labelSrc: "/emoticon-pack/font_4336952_38dd2xmahqp.png",
+    url: "/emoticon-pack/font_4336952_38dd2xmahqp.js",
+    config: "/emoticon-pack/font_4336952_38dd2xmahqp.json",
+    column: 6,
+    style: "font-size: 64px;",
+  },
+];

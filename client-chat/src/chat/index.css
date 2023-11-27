@@ -1,0 +1,102 @@
+/* 修改组件内滚动条样式 */
+.scroll-list::-webkit-scrollbar {
+  width: 8px;
+  /* 滚动条宽度 */
+  background-color: #f1f1f1;
+  /* 滚动条背景颜色 */
+}
+
+.scroll-list::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* 滚动条滑块颜色 */
+  border-radius: 10px;
+  /* 滚动条滑块圆角 */
+}
+
+.scroll-list::-webkit-scrollbar-track {
+  background-color: #fff;
+  /* 滚动条轨道颜色 */
+  border-radius: 10px;
+  /* 滚动条轨道圆角 */
+}
+
+.input-field {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  border: none;
+  box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.input-field:focus-visible {
+  outline: none;
+  box-shadow: 0 0 1px 2px rgba(0, 123, 255, 0.65);
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 24px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button.link {
+  background-color: transparent;
+  color: #007bff;
+}
+
+.button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.avatar {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 14px;
+  background: #969296;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  user-select: none;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+/** 消息内图片 */
+.msg-img {
+  display: block;
+  max-width: 100%;
+  max-height: 260px;
+  border-radius: 4px;
+}
+
+.msg-img + .msg-img {
+  margin-top: 8px;
+}
+
+/** 消息内表情 */
+.msg-emoji-icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.msg-emoji-img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 108px;
+  border-radius: 6px;
+  margin: 2px;
+}

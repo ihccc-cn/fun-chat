@@ -1,0 +1,63 @@
+.popup-container {
+  display: inline-block;
+}
+
+.popup-body {
+  position: relative;
+}
+
+.popup-content {
+  position: absolute;
+  width: max-content;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.popup-content::before {
+  content: "";
+  position: absolute;
+  border: 8px solid transparent;
+}
+
+/* 上方居中 */
+.popup-placement-top-center .popup-content {
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  box-shadow: 0 8px 20px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popup-placement-top-center .popup-content::before {
+  left: 50%;
+  bottom: -16px;
+  transform: translateX(-50%);
+  border-top-color: #ffffff;
+}
+
+/* 上方靠左 */
+.popup-placement-top-left .popup-content {
+  left: -12px;
+  bottom: 16px;
+  box-shadow: 0 8px 20px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popup-placement-top-left .popup-content::before {
+  left: 16px;
+  bottom: -16px;
+  border-top-color: #ffffff;
+}
+
+/* 下方靠右 */
+.popup-placement-bottom-right .popup-content {
+  top: 36px;
+  left: calc(100% + 16px);
+  transform: translate(-100%, 0);
+  box-shadow: 0 -8px 20px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popup-placement-bottom-right .popup-content::before {
+  right: 12px;
+  top: -16px;
+  transform: translateX(-50%);
+  border-bottom-color: #fff;
+}

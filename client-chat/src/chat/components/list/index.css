@@ -1,0 +1,79 @@
+.list {
+  gap: 12px;
+  padding: 16px;
+  overflow: auto;
+}
+
+.list-item {
+  width: 100%;
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+.list-item:hover {
+  background: #e5e5e5;
+}
+
+.list-item:active {
+  transform: scale(0.8);
+}
+
+.list-column .list-item + .list-item {
+  margin-top: 12px;
+}
+
+.list-grid {
+  display: grid;
+}
+
+.list-grid-2 {
+  grid-template-columns: repeat(2, 180px);
+  grid-template-rows: repeat(auto-fill, 180px);
+}
+
+.list-grid-2 .list-item {
+  width: 180px;
+}
+
+.list-grid-3 {
+  grid-template-columns: repeat(3, 144px);
+  grid-template-rows: repeat(auto-fill, 144px);
+}
+
+.list-grid-3 .list-item {
+  width: 144px;
+}
+
+.list-grid-4 {
+  grid-template-columns: repeat(4, 108px);
+  grid-template-rows: repeat(auto-fill, 108px);
+}
+
+.list-grid-4 .list-item {
+  width: 108px;
+  height: 108px;
+}
+
+.list-grid-6 {
+  grid-template-columns: repeat(6, 80px);
+  grid-template-rows: repeat(auto-fill, 80px);
+}
+
+.list-grid-6 .list-item {
+  width: 80px;
+  height: 80px;
+}
+
+.list-grid-10 {
+  grid-template-columns: repeat(10, 36px);
+  grid-template-rows: repeat(auto-fill, 36px);
+}
+
+.list-grid-10 .list-item {
+  width: 36px;
+  height: 36px;
+}
