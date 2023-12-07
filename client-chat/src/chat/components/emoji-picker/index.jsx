@@ -34,6 +34,7 @@ function EmojiPicker({ title, tabs, children, onChange, style }) {
           const children = (
             <EmojiImageList
               data={list}
+              column={column}
               onItem={(item) => onChange(item, style)}
             />
           );

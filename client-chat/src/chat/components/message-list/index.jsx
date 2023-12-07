@@ -35,28 +35,33 @@ function MessageList({ slogan, isSelf, list = [], onAvatarDbClick }) {
     >
       {slogan}
       {list.map((item) => {
-        const self = isSelf?.(item.user.id);
         if (item.type === "chat") {
           return (
             <UserMessage
-              self={self}
+              self={isSelf?.(item.user.id)}
               data={item}
               onAvatarDbClick={() => onAvatarDbClick?.(item.user)}
               key={item.id}
             />
           );
         }
-        if (item.type === "dismiss") {
-          return <DismissMessage data={item} key={item.id} />;
+        if (item.type === "jab") {
+          return <JabMessage isSelf={isSelf} data={item} key={item.id} />;
         }
         if (item.type === "userJoin") {
-          return <UserJoinMessage self={self} data={item} key={item.id} />;
+          return (
+            <UserJoinMessage
+              self={isSelf?.(item.user.id)}
+              data={item}
+              key={item.id}
+            />
+          );
         }
         if (item.type === "userLeave") {
           return <UserLeaveMessage data={item} key={item.id} />;
         }
-        if (item.type === "jab") {
-          return <JabMessage isSelf={isSelf} data={item} key={item.id} />;
+        if (item.type === "dismiss") {
+          return <DismissMessage data={item} key={item.id} />;
         }
         return <SystemMessage data={item} key={item.id} />;
       })}

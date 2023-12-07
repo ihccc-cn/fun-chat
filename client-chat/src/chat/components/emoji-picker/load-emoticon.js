@@ -8,11 +8,14 @@ class LoadEmojiPack {
     if (this.scripts.has(src)) return;
 
     return new Promise((resolve, reject) => {
+      this.scripts.add(src);
       const script = document.createElement("script");
       script.src = src;
-      script.onerror = reject;
+      script.onerror = () => {
+        this.scripts.delete(src);
+        reject();
+      };
       script.onload = script.onreadystatechange = () => {
-        this.scripts.add(src);
         resolve();
       };
       document.head.appendChild(script);
@@ -27,6 +30,7 @@ class LoadEmojiPack {
       this.pack.set(src, configData);
       return configData;
     } catch (error) {
+      this.pack.delete(src);
       console.log(error);
     }
   }

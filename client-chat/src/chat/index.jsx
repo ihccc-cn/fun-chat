@@ -139,7 +139,7 @@ function Chat({ server, icons }) {
         content = `<img class="msg-img" src="${data}" alt="img" />`;
       }
       if (type === "emoji-image") {
-        content = `<img class="msg-emoji-img" src="${data}" alt="img" />`;
+        content = `<img class="msg-emoji-img" src="${data}" alt="img" ${styleAttr} />`;
       }
       if (type === "emoji-icon") {
         content = `<svg class="msg-emoji-icon" aria-hidden="true" ${styleAttr}><use xlink:href="#${data}"></use></svg>`;

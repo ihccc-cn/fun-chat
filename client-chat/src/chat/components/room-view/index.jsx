@@ -17,7 +17,7 @@ function RoomView({ icon, list, isSelf, onAdd, onJoin }) {
   const showList = () => setMode("list");
 
   const handleJoin = (item) => {
-    if (item.ask === "0" || isSelf?.(item.creator.id)) {
+    if (item.ask !== "1" || isSelf?.(item.creator.id)) {
       onJoin(item);
     } else {
       setMode("ask");

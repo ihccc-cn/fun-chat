@@ -25,7 +25,7 @@ function RoomList({ icon, list, isSelf, onAdd, onItem }) {
             <Popup
               className="room-lock"
               content="进入需申请"
-              contentStyle={{ padding: "4px 12px" }}
+              contentStyle={{ padding: "4px 12px", fontSize: 14 }}
               trigger="onMouseOver"
             >
               {icon.iconLock}
